@@ -1,0 +1,238 @@
+\subsubsection*{\S 云原生与容器技术}
+\setcounter{problemname}{0}
+
+\begin{problem}
+	下列哪项不是Docker容器的特点：
+	%\uline{C}    
+    \vspace{-0.8em}
+    \begin{multicols}{2}
+        \begin{enumerate}[label=\Alph*.]
+            \item 创建速度很快
+            \item 可以共享操作系统的资源
+            \item 启动时间是分钟级
+            \item 资源使用较少
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	下列哪项不是Docker的网络模式
+	%\uline{B}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item Bridge 模式
+            \item 其他全是
+            \item None模式
+            \item Host模式
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+    以下哪些是Docker的存储驱动：
+	%\uline{A}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item 其他都是
+            \item verlayFS
+            \item Device mapper
+            \item AUFS
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	以下哪个命令可以查看当前运行容器：
+	%\uline{B}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item docker top
+            \item docker ps
+            \item docker run
+            \item docker logs
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	Kubernetes集群将元数据保存在以下哪个组件：
+	%\uline{B}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item Kubelet
+            \item Etcd
+            \item 以上都不是
+            \item Kube-apiserver
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	以下哪些是Kubernetes的控制器：
+	%\uline{C}    
+    \vspace{-0.8em}
+    \begin{multicols}{2}
+        \begin{enumerate}[label=\Alph*.]
+            \item ReplicaSet
+            \item Deployment
+            \item Both ReplicaSet and Deployment
+            \item Rolling Updates
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	以下哪些是Kubernetes的核心概念
+	%\uline{A}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item 其他都是
+            \item Services
+            \item Volumes
+            \item Pods
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+    Kubernetes里面的Replication控制器的职责是：
+	%\uline{D}    
+    \vspace{-0.8em}
+    \begin{multicols}{2}
+        \begin{enumerate}[label=\Alph*.]
+            \item 当已存在的Pod异常退出后，创建新的Pod
+            \item 帮助达到预期的状态
+            \item 删除或者更新多个Pod
+            \item 其他都是
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	如何通过命令行创建一个容器？
+	%\uline{C}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item docker create
+            \item docker start
+            \item docker run
+            \item docker poll
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	Dockerfile中的命令 RUN, CMD 和ENTRYPOINT几者有何区别?
+	%\uline{B}    
+    % \vspace{-0.8em}
+    % \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item ENTRYPOINT 配置容器启动时运行的命令
+            \item 其他都是
+            \item RUN 执行命令并创建新的镜像层，RUN 经常用于安装软件包。
+            \item CMD 设置容器启动后默认执行的命令及其参数，但 CMD 能够被 docker run 后面跟的命令行参数替换
+        \end{enumerate}
+    % \end{multicols}
+    % \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	使用Kubernetes带来的好处有哪些？
+	%\uline{B}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item 横向扩展
+            \item 其他都是
+            \item 自动调度
+            \item 自动回滚
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	以下哪项用于确保pod不会被调度到不适当的节点上？
+	%\uline{A}    
+    \vspace{-0.8em}
+    \begin{multicols}{2}
+        \begin{enumerate}[label=\Alph*.]
+            \item Taints 和 Tolerations
+            \item 以上都不是
+            \item TTaints
+            \item Tolerations
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	Docker容器的状态有：
+	%\uline{BD}    
+    \vspace{-0.8em}
+    \begin{multicols}{4}
+        \begin{enumerate}[label=\Alph*.]
+            \item Paused
+            \item Running
+            \item Restarting
+            \item Exited
+        \end{enumerate}
+    \end{multicols}
+    \vspace{-1em}
+\end{problem}
+
+
+
+\begin{problem}
+	关于Kubernetes的namespace：命名空间是在多个用户之间划分群集资源的方法
+    %\hfill （\ding{51}）
+\end{problem}
+
+
+
+\begin{problem}
+    以下描述是否正确：多步构建允许在Dockerfile中使用多个FROM指令。两个FROM指令之间的所有指令会生产一个中间镜像，最后一个FROM指令之后的指令将生成最终镜像。中间镜像中的文件可以通过\verb|COPY --from=<image-number>|指令拷贝，其中\verb|image-number|为镜像编号，0为第一个基础镜像。没有被拷贝的文件都不会存在于最终生成的镜像，这样可以减小镜像大小，同时避免出现安全问题。
+    %\hfill （\ding{51}）
+\end{problem}
+
+
+
